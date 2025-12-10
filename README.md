@@ -107,10 +107,12 @@ WARNING: Restart the electronic-store file, because after many use the data will
 
 ```bash
 # API tests
+#14/14 has to work
 cd api-testing-demo-java_starter
 gradle clean test -Ptag=api --no-build-cache
 
 # UI tests
+#13/13 has to work
 cd api-testing-demo-java_starter
 gradle clean test -Ptag=ui --no-build-cache
 ```
