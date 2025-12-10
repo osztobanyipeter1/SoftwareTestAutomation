@@ -1,13 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        JAVA_HOME = tool 'Java 17'
-        PATH = "${JAVA_HOME}/bin;${PATH}"
-        BUILD_NUMBER = "${env.BUILD_NUMBER}"
-        GIT_COMMIT_SHORT = "${env.GIT_COMMIT.take(7)}"
-    }
-
     options {
         buildDiscarder(logRotator(numToKeepStr: '10'))
         timeout(time: 30, unit: 'MINUTES')
@@ -21,8 +14,7 @@ pipeline {
                 echo "Checking out code from GitHub..."
                 echo "====================================="
 
-                git branch: 'main',
-                    url: 'https://github.com/osztobanyipeter1/SoftwareTestAutomation.git'
+                checkout scm
 
                 bat '''
                     echo Repository: & git config --get remote.origin.url
@@ -57,7 +49,6 @@ pipeline {
             steps {
                 echo "====================================="
                 echo "Running API Tests (14 tests)..."
-                echo "Electronics Store must run on 8080!"
                 echo "====================================="
 
                 bat 'gradle clean test -Ptag=api --no-build-cache'
@@ -82,11 +73,11 @@ pipeline {
 
                 bat '''
                     if exist "build\\allure-results" (
-                        echo Generating Allure report...
+                        echo Allure report found, generating...
                         allure generate build/allure-results --clean -o build/allure-report
-                        echo Allure report generated
+                        echo Allure report generated successfully
                     ) else (
-                        echo No test results found
+                        echo No allure results found
                     )
                 '''
             }
@@ -95,34 +86,39 @@ pipeline {
 
     post {
         always {
-            echo "====================================="
-            echo "Collecting Results..."
-            echo "====================================="
+            node {
+                echo "====================================="
+                echo "Archiving results..."
+                echo "====================================="
 
-            archiveArtifacts artifacts: '''
-                build/allure-results/**,
-                build/allure-report/**,
-                build/test-results/**
-            ''',
-            allowEmptyArchive: true,
-            fingerprint: true
+                archiveArtifacts artifacts: '''
+                    build/allure-results/**,
+                    build/allure-report/**,
+                    build/test-results/**
+                ''',
+                allowEmptyArchive: true
 
-            junit testResults: 'build/test-results/**/*.xml',
-                 allowEmptyResults: true
+                junit testResults: 'build/test-results/**/*.xml',
+                     allowEmptyResults: true
+            }
         }
 
         success {
-            echo "====================================="
-            echo "BUILD SUCCESSFUL!"
-            echo "====================================="
-            echo "Build #${BUILD_NUMBER} passed"
+            node {
+                echo "====================================="
+                echo "BUILD SUCCESSFUL!"
+                echo "====================================="
+                echo "All tests passed"
+            }
         }
 
         failure {
-            echo "====================================="
-            echo "BUILD FAILED!"
-            echo "====================================="
-            echo "Build #${BUILD_NUMBER} failed"
+            node {
+                echo "====================================="
+                echo "BUILD FAILED!"
+                echo "====================================="
+                echo "Check console output for details"
+            }
         }
     }
 }
