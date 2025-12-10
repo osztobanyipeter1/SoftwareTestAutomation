@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+group = 'com.testautomation'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Existing
+    implementation 'com.google.code.gson:gson:2.11.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.3'
+    testImplementation 'io.rest-assured:rest-assured:5.5.0'
+    testImplementation 'org.assertj:assertj-core:3.26.3'
+    testImplementation 'org.mockito:mockito-core:5.14.2'
+
+    // UI Testing - Selenium
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.15.0'
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.6.3'
+
+
+    // Logging
+    testImplementation 'org.slf4j:slf4j-api:2.0.10'
+    testImplementation 'ch.qos.logback:logback-classic:1.4.14'
+
+    // Allure
+    testImplementation 'io.qameta.allure:allure-junit5:2.25.0'
+    testImplementation 'io.qameta.allure:allure-rest-assured:2.25.0'
+}
+
+test {
+    useJUnitPlatform {
+        includeTags project.hasProperty('tag') ? project.property('tag') : 'api'
+    }
+
+    testLogging {
+        events "PASSED", "FAILED", "SKIPPED"
+        showStandardStreams = false
+    }
+
+    systemProperty 'allure.results.directory', 'build/allure-results'
+}
