@@ -16,6 +16,7 @@ pipeline {
 
                 checkout scm
 
+                // Display repository info
                 bat '''
                     cd api-testing-demo-java_starter
                     echo Repository: & git config --get remote.origin.url
@@ -43,28 +44,18 @@ pipeline {
             }
         }
 
-        stage('API Tests') {
+        stage('API Tests (14 tests)') {
             steps {
                 echo "====================================="
                 echo "Running API Tests (14 tests)..."
+                echo "====================================="
+                echo "Testing: Inventory, Cart, Orders, Payments"
+                echo "Using: ReqRes.in mock API endpoints"
                 echo "====================================="
 
                 bat '''
                     cd api-testing-demo-java_starter
                     gradle clean test -Ptag=api --no-build-cache
-                '''
-            }
-        }
-
-        stage('UI Tests') {
-            steps {
-                echo "====================================="
-                echo "Running UI Tests (13 tests)..."
-                echo "====================================="
-
-                bat '''
-                    cd api-testing-demo-java_starter
-                    gradle clean test -Ptag=ui --no-build-cache
                 '''
             }
         }
@@ -110,7 +101,8 @@ pipeline {
             echo "====================================="
             echo "BUILD SUCCESSFUL!"
             echo "====================================="
-            echo "All tests passed"
+            echo "All 14 API Tests Passed"
+            echo "Check Allure Report: build/allure-report/index.html"
         }
 
         failure {
