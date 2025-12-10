@@ -23,6 +23,7 @@ api-testing-demo-java_starter/
 ├── 📄 build.gradle              # Gradle build configuration
 ├── 📄 settings.gradle           # Gradle settings
 ├── 📄 README.md                 # This file
+├── 📄 Jenkinsfile               # Jenkins pipeline configuration
 │
 ├── 📁 src/
 │   ├── 📁 main/java/
@@ -106,9 +107,11 @@ WARNING: Restart the electronic-store file, because after many use the data will
 
 ```bash
 # API tests
+cd api-testing-demo-java_starter
 gradle clean test -Ptag=api --no-build-cache
 
 # UI tests
+cd api-testing-demo-java_starter
 gradle clean test -Ptag=ui --no-build-cache
 ```
 
