@@ -15,12 +15,6 @@ pipeline {
                 echo "====================================="
 
                 checkout scm
-
-                bat '''
-                    echo Repository: & git config --get remote.origin.url
-                    echo Branch: & git rev-parse --abbrev-ref HEAD
-                    echo Commit: & git rev-parse --short HEAD
-                '''
             }
         }
 
@@ -33,10 +27,6 @@ pipeline {
                 bat '''
                     echo Java version:
                     java -version
-
-                    echo.
-                    echo Gradle version:
-                    gradle --version
 
                     echo.
                     echo Building...
@@ -73,11 +63,11 @@ pipeline {
 
                 bat '''
                     if exist "build\\allure-results" (
-                        echo Allure report found, generating...
+                        echo Generating Allure report...
                         allure generate build/allure-results --clean -o build/allure-report
-                        echo Allure report generated successfully
+                        echo Allure report generated
                     ) else (
-                        echo No allure results found
+                        echo No test results found
                     )
                 '''
             }
@@ -86,39 +76,27 @@ pipeline {
 
     post {
         always {
-            node {
-                echo "====================================="
-                echo "Archiving results..."
-                echo "====================================="
+            echo "====================================="
+            echo "Collecting results..."
+            echo "====================================="
 
-                archiveArtifacts artifacts: '''
-                    build/allure-results/**,
-                    build/allure-report/**,
-                    build/test-results/**
-                ''',
-                allowEmptyArchive: true
+            archiveArtifacts artifacts: '''
+                build/allure-results/**,
+                build/allure-report/**,
+                build/test-results/**
+            ''',
+            allowEmptyArchive: true
 
-                junit testResults: 'build/test-results/**/*.xml',
-                     allowEmptyResults: true
-            }
+            junit testResults: 'build/test-results/**/*.xml',
+                 allowEmptyResults: true
         }
 
         success {
-            node {
-                echo "====================================="
-                echo "BUILD SUCCESSFUL!"
-                echo "====================================="
-                echo "All tests passed"
-            }
+            echo "BUILD SUCCESSFUL!"
         }
 
         failure {
-            node {
-                echo "====================================="
-                echo "BUILD FAILED!"
-                echo "====================================="
-                echo "Check console output for details"
-            }
+            echo "BUILD FAILED!"
         }
     }
 }
