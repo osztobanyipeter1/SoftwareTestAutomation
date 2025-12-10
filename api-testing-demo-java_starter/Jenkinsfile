@@ -49,7 +49,7 @@ pipeline {
                 echo "====================================="
                 echo "Running API Tests (14 tests)..."
                 echo "====================================="
-                echo "Testing: Inventory, Cart, Orders, Payments
+                echo "Testing: Inventory, Cart, Orders, Payments"
                 echo "Using: ReqRes.in mock API endpoints"
                 echo "====================================="
 
