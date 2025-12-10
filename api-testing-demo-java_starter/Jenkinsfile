@@ -15,6 +15,13 @@ pipeline {
                 echo "====================================="
 
                 checkout scm
+
+                bat '''
+                    cd api-testing-demo-java_starter
+                    echo Repository: & git config --get remote.origin.url
+                    echo Branch: & git rev-parse --abbrev-ref HEAD
+                    echo Commit: & git rev-parse --short HEAD
+                '''
             }
         }
 
@@ -25,6 +32,7 @@ pipeline {
                 echo "====================================="
 
                 bat '''
+                    cd api-testing-demo-java_starter
                     echo Java version:
                     java -version
 
@@ -41,7 +49,10 @@ pipeline {
                 echo "Running API Tests (14 tests)..."
                 echo "====================================="
 
-                bat 'gradle clean test -Ptag=api --no-build-cache'
+                bat '''
+                    cd api-testing-demo-java_starter
+                    gradle clean test -Ptag=api --no-build-cache
+                '''
             }
         }
 
@@ -51,7 +62,10 @@ pipeline {
                 echo "Running UI Tests (13 tests)..."
                 echo "====================================="
 
-                bat 'gradle clean test -Ptag=ui --no-build-cache'
+                bat '''
+                    cd api-testing-demo-java_starter
+                    gradle clean test -Ptag=ui --no-build-cache
+                '''
             }
         }
 
@@ -62,12 +76,13 @@ pipeline {
                 echo "====================================="
 
                 bat '''
+                    cd api-testing-demo-java_starter
                     if exist "build\\allure-results" (
-                        echo Generating Allure report...
+                        echo Allure report found, generating...
                         allure generate build/allure-results --clean -o build/allure-report
-                        echo Allure report generated
+                        echo Allure report generated successfully
                     ) else (
-                        echo No test results found
+                        echo No allure results found
                     )
                 '''
             }
@@ -77,26 +92,32 @@ pipeline {
     post {
         always {
             echo "====================================="
-            echo "Collecting results..."
+            echo "Archiving results..."
             echo "====================================="
 
             archiveArtifacts artifacts: '''
-                build/allure-results/**,
-                build/allure-report/**,
-                build/test-results/**
+                api-testing-demo-java_starter/build/allure-results/**,
+                api-testing-demo-java_starter/build/allure-report/**,
+                api-testing-demo-java_starter/build/test-results/**
             ''',
             allowEmptyArchive: true
 
-            junit testResults: 'build/test-results/**/*.xml',
+            junit testResults: 'api-testing-demo-java_starter/build/test-results/**/*.xml',
                  allowEmptyResults: true
         }
 
         success {
+            echo "====================================="
             echo "BUILD SUCCESSFUL!"
+            echo "====================================="
+            echo "All tests passed"
         }
 
         failure {
+            echo "====================================="
             echo "BUILD FAILED!"
+            echo "====================================="
+            echo "Check console output for details"
         }
     }
 }
