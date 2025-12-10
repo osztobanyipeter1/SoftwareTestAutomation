@@ -49,7 +49,7 @@ pipeline {
                 echo "====================================="
                 echo "Running API Tests (14 tests)..."
                 echo "====================================="
-                echo "Testing: Inventory, Cart, Orders, Payments"
+                echo "Testing: Inventory, Cart, Orders, Payments
                 echo "Using: ReqRes.in mock API endpoints"
                 echo "====================================="
 
@@ -59,36 +59,15 @@ pipeline {
                 '''
             }
         }
-
-        stage('Allure Report') {
-            steps {
-                echo "====================================="
-                echo "Generating Allure Report..."
-                echo "====================================="
-
-                bat '''
-                    cd api-testing-demo-java_starter
-                    if exist "build\\allure-results" (
-                        echo Allure report found, generating...
-                        allure generate build/allure-results --clean -o build/allure-report
-                        echo Allure report generated successfully
-                    ) else (
-                        echo No allure results found
-                    )
-                '''
-            }
-        }
     }
 
     post {
         always {
             echo "====================================="
-            echo "Archiving results..."
+            echo "Archiving test results..."
             echo "====================================="
 
             archiveArtifacts artifacts: '''
-                api-testing-demo-java_starter/build/allure-results/**,
-                api-testing-demo-java_starter/build/allure-report/**,
                 api-testing-demo-java_starter/build/test-results/**
             ''',
             allowEmptyArchive: true
@@ -102,7 +81,7 @@ pipeline {
             echo "BUILD SUCCESSFUL!"
             echo "====================================="
             echo "All 14 API Tests Passed"
-            echo "Check Allure Report: build/allure-report/index.html"
+            echo "Test Report: build/reports/tests/test/index.html"
         }
 
         failure {
