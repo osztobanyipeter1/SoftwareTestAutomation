@@ -9,7 +9,7 @@ public class Config {
     private static final Properties ROOT = new Properties();
     private static final Properties ENV = new Properties();
     private static String activeEnv;
-
+    // Load properties at class initialization
     static {
         try {
             try (InputStream is = resource("/config.properties")) {
