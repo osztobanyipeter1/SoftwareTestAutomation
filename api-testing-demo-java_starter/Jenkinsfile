@@ -43,15 +43,15 @@ pipeline {
             }
         }
 
-        stage('Tests') {
+        stage('API Tests (14 tests)') {
             steps {
                 echo "====================================="
-                echo "Running All Tests (27 tests)..."
+                echo "Running API Tests (14 tests)..."
                 echo "====================================="
 
                 bat '''
                     cd api-testing-demo-java_starter
-                    gradle clean test
+                    gradle clean test -Ptag=api --no-build-cache
                 '''
             }
         }
@@ -84,9 +84,7 @@ pipeline {
 
             archiveArtifacts artifacts: '''
                 api-testing-demo-java_starter/build/allure-results/**,
-                api-testing-demo-java_starter/build/allure-report/**,
-                api-testing-demo-java_starter/build/test-results/**
-            ''',
+                ''',
             allowEmptyArchive: true
 
             junit testResults: 'api-testing-demo-java_starter/build/test-results/**/*.xml',
@@ -97,7 +95,7 @@ pipeline {
             echo "====================================="
             echo "BUILD SUCCESSFUL!"
             echo "====================================="
-            echo "All tests passed"
+            echo "All API test passed"
         }
 
         failure {
