@@ -16,7 +16,6 @@ pipeline {
 
                 checkout scm
 
-                // Display repository info
                 bat '''
                     cd api-testing-demo-java_starter
                     echo Repository: & git config --get remote.origin.url
@@ -44,13 +43,10 @@ pipeline {
             }
         }
 
-        stage('API Tests (14 tests)') {
+        stage('API Tests') {
             steps {
                 echo "====================================="
                 echo "Running API Tests (14 tests)..."
-                echo "====================================="
-                echo "Testing: Inventory, Cart, Orders, Payments"
-                echo "Using: ReqRes.in mock API endpoints"
                 echo "====================================="
 
                 bat '''
@@ -59,15 +55,49 @@ pipeline {
                 '''
             }
         }
+
+        stage('UI Tests') {
+            steps {
+                echo "====================================="
+                echo "Running UI Tests (13 tests)..."
+                echo "====================================="
+
+                bat '''
+                    cd api-testing-demo-java_starter
+                    gradle clean test -Ptag=ui --no-build-cache
+                '''
+            }
+        }
+
+        stage('Allure Report') {
+            steps {
+                echo "====================================="
+                echo "Generating Allure Report..."
+                echo "====================================="
+
+                bat '''
+                    cd api-testing-demo-java_starter
+                    if exist "build\\allure-results" (
+                        echo Allure report found, generating...
+                        allure generate build/allure-results --clean -o build/allure-report
+                        echo Allure report generated successfully
+                    ) else (
+                        echo No allure results found
+                    )
+                '''
+            }
+        }
     }
 
     post {
         always {
             echo "====================================="
-            echo "Archiving test results..."
+            echo "Archiving results..."
             echo "====================================="
 
             archiveArtifacts artifacts: '''
+                api-testing-demo-java_starter/build/allure-results/**,
+                api-testing-demo-java_starter/build/allure-report/**,
                 api-testing-demo-java_starter/build/test-results/**
             ''',
             allowEmptyArchive: true
@@ -80,8 +110,7 @@ pipeline {
             echo "====================================="
             echo "BUILD SUCCESSFUL!"
             echo "====================================="
-            echo "All 14 API Tests Passed"
-            echo "Test Report: build/reports/tests/test/index.html"
+            echo "All tests passed"
         }
 
         failure {
