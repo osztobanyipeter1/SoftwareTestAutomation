@@ -40,6 +40,7 @@ dependencies {
 test {
     useJUnitPlatform {
         includeTags project.hasProperty('tag') ? project.property('tag') : 'api'
+        includeTags project.hasProperty('tag') ? project.property('tag') : 'ui'
     }
 
     testLogging {

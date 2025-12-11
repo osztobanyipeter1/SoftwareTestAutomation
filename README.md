@@ -11,7 +11,9 @@ This project demonstrates a **professional-grade test automation framework** for
 - **3 E2E Flows** - Complete checkout scenarios
 - **Framework Features** - Config management, logging, helper utilities, CI/CD integration
 
-**Target Application**: [SauceDemo](https://www.saucedemo.com/) - Free test e-commerce platform
+**Target Application for UI tests**: [SauceDemo](https://www.saucedemo.com/)
+
+**API Backend**: Electronics Store API
 
 ---
 
@@ -99,13 +101,19 @@ cd {location}
 java -jar electronics-store-0.0.1-SNAPSHOT.jar
 ```
 
-WARNING: Restart the electronic-store file, because after many use the data will be out of order and the API calls will FAIL.
+#### WARNING: Restart the electronic-store file, because after many use the data will be out of order and the API calls will FAIL.
 
 ### Run Tests
 
 (Use PowerShell and the location where you cloned the git repository)
 
+#### WARNING: Befure the UI tests, make sure that you are logged out from the SauceDemo application in Chrome browser, and the cart is empty.
+
 ```bash
+#Run both API and UI tests
+cd api-testing-demo-java_starter
+gradle clean test --no-build-cache
+
 # API tests
 #14/14 has to work
 cd api-testing-demo-java_starter
@@ -116,11 +124,13 @@ gradle clean test -Ptag=api --no-build-cache
 cd api-testing-demo-java_starter
 gradle clean test -Ptag=ui --no-build-cache
 ```
+Last test run:
+![alt text](./img_1.png)
 
 ### Allure report
 
 ```bash
-# For Allure reports, use the following to check it after API or UI tests
+# For Allure reports, use the following to check it after API or UI tests or both of them
 allure serve build/allure-results
 ```
 
@@ -258,7 +268,7 @@ Jenkins Dashboard → New Item → Enter Name: "SauceDemo-Test-Automation"
 
 ```
 Configure → General:
-  ☑ GitHub project
+  GitHub project
   Project url: https://github.com/osztobanyipeter1/SoftwareTestAutomation
 ```
 

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">12.912s</div>
+<div class="counter">4.972s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,31 +81,31 @@
 <tr>
 <td class="success">03_CART_ADD_ITEM - POST /api/cart/{userId}/items</td>
 <td class="success">cart_add_item()</td>
-<td class="success">0.144s</td>
+<td class="success">0.079s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">05_CART_CALCULATE - POST /api/cart/{userId}/calculate</td>
 <td class="success">cart_calculate()</td>
-<td class="success">0.056s</td>
+<td class="success">0.039s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">04_CART_GET - GET /api/cart/{userId}</td>
 <td class="success">cart_get()</td>
-<td class="success">0.062s</td>
+<td class="success">0.047s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">01_INVENTORY_GET_STATUS - GET /api/inventory/{productId}/status</td>
 <td class="success">inventory_get_status()</td>
-<td class="success">11.475s</td>
+<td class="success">4.083s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">02_INVENTORY_RESERVE - PUT /api/inventory/{productId}/reserve</td>
 <td class="success">inventory_reserve()</td>
-<td class="success">0.518s</td>
+<td class="success">0.166s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -123,7 +123,7 @@
 <tr>
 <td class="success">14_NEGATIVE_PAYMENT_MISSING_ORDERID - POST payment without orderId</td>
 <td class="success">negative_payment_missing_orderid()</td>
-<td class="success">0.070s</td>
+<td class="success">0.075s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -135,31 +135,31 @@
 <tr>
 <td class="success">07_ORDER_READ - GET /api/orders/{orderId}</td>
 <td class="success">order_read()</td>
-<td class="success">0.109s</td>
+<td class="success">0.083s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">08_ORDER_UPDATE_STATUS - PUT /api/orders/{orderId}/status</td>
 <td class="success">order_update_status()</td>
-<td class="success">0.089s</td>
+<td class="success">0.054s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">09_ORDER_VERIFY - Final order verification</td>
 <td class="success">order_verify()</td>
-<td class="success">0.068s</td>
+<td class="success">0.051s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">11_PAYMENT_STATUS - GET /api/payments/{paymentId}/status</td>
 <td class="success">payment_get_status()</td>
-<td class="success">0.037s</td>
+<td class="success">0.031s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">10_PAYMENT_PROCESS - POST /api/payments/process</td>
 <td class="success">payment_process()</td>
-<td class="success">0.076s</td>
+<td class="success">0.056s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -167,22 +167,22 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>21:11:25.295 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:25.295 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:25.308 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: ComprehensiveApiTest Init
-21:11:25.308 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: ComprehensiveApiTest Init
-21:11:25.310 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:25.310 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:25.480 [Test worker] INFO  c.testautomation.helpers.TestLogger - Initialized with userId: user1, productId: laptop1
-21:11:25.480 [Test worker] INFO  c.testautomation.helpers.TestLogger - Initialized with userId: user1, productId: laptop1
-21:11:25.764 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:25.764 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:25.765 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_get_status
-21:11:25.765 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_get_status
-21:11:25.777 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:25.777 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:25.781 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/laptop1/status
-21:11:25.781 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/laptop1/status
+<pre>09:51:30.451 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:30.451 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:30.465 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: ComprehensiveApiTest Init
+09:51:30.465 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: ComprehensiveApiTest Init
+09:51:30.465 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:30.465 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:30.537 [Test worker] INFO  c.testautomation.helpers.TestLogger - Initialized with userId: user1, productId: laptop1
+09:51:30.537 [Test worker] INFO  c.testautomation.helpers.TestLogger - Initialized with userId: user1, productId: laptop1
+09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_get_status
+09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_get_status
+09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:30.638 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/laptop1/status
+09:51:30.638 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/laptop1/status
 Request method:	GET
 Request URI:	http://localhost:8080/api/api/inventory/laptop1/status
 Proxy:			&lt;none&gt;
@@ -195,23 +195,23 @@ Headers:		Accept=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-21:11:34.555 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;reservedQuantity&quot;:0,&quot;availableQuantity&quot;:10,&quot;price&quot;:1299.99,&quot;category&quot;:&quot;Electronics&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;totalStock&quot;:10},&quot;timestamp&quot;:&quot;2025-12-10T21:11:34.1735294&quot;}
-21:11:34.555 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;reservedQuantity&quot;:0,&quot;availableQuantity&quot;:10,&quot;price&quot;:1299.99,&quot;category&quot;:&quot;Electronics&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;totalStock&quot;:10},&quot;timestamp&quot;:&quot;2025-12-10T21:11:34.1735294&quot;}
-GET INVENTORY Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;reservedQuantity&quot;:0,&quot;availableQuantity&quot;:10,&quot;price&quot;:1299.99,&quot;category&quot;:&quot;Electronics&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;totalStock&quot;:10},&quot;timestamp&quot;:&quot;2025-12-10T21:11:34.1735294&quot;}
-21:11:37.169 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:37.169 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:37.173 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_get_status
-21:11:37.173 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_get_status
-21:11:37.175 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:37.175 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:37.711 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:37.711 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:37.712 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_reserve
-21:11:37.712 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_reserve
-21:11:37.713 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:37.713 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:37.714 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/reserve
-21:11:37.714 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/reserve
+09:51:33.586 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;laptop1&quot;,&quot;totalStock&quot;:10,&quot;reservedQuantity&quot;:0,&quot;availableQuantity&quot;:10,&quot;price&quot;:1299.99,&quot;category&quot;:&quot;Electronics&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:33.3844154&quot;}
+09:51:33.586 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;laptop1&quot;,&quot;totalStock&quot;:10,&quot;reservedQuantity&quot;:0,&quot;availableQuantity&quot;:10,&quot;price&quot;:1299.99,&quot;category&quot;:&quot;Electronics&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:33.3844154&quot;}
+GET INVENTORY Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;laptop1&quot;,&quot;totalStock&quot;:10,&quot;reservedQuantity&quot;:0,&quot;availableQuantity&quot;:10,&quot;price&quot;:1299.99,&quot;category&quot;:&quot;Electronics&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:33.3844154&quot;}
+09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_get_status
+09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_get_status
+09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:34.834 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:34.834 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:34.834 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_reserve
+09:51:34.834 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_reserve
+09:51:34.839 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:34.839 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:34.839 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/reserve
+09:51:34.839 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/reserve
 Request method:	PUT
 Request URI:	http://localhost:8080/api/api/inventory/laptop1/reserve
 Proxy:			&lt;none&gt;
@@ -227,23 +227,23 @@ Body:
 {
     &quot;quantity&quot;: 1
 }
-21:11:38.198 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;availableQuantity&quot;:8,&quot;productId&quot;:&quot;laptop1&quot;,&quot;reservedQuantity&quot;:1,&quot;totalReserved&quot;:2},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.1916121&quot;}
-21:11:38.198 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;availableQuantity&quot;:8,&quot;productId&quot;:&quot;laptop1&quot;,&quot;reservedQuantity&quot;:1,&quot;totalReserved&quot;:2},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.1916121&quot;}
-RESERVE INVENTORY Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;availableQuantity&quot;:8,&quot;productId&quot;:&quot;laptop1&quot;,&quot;reservedQuantity&quot;:1,&quot;totalReserved&quot;:2},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.1916121&quot;}
-21:11:38.227 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.227 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.228 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_reserve
-21:11:38.228 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_reserve
-21:11:38.228 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.228 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.243 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.243 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.245 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_add_item
-21:11:38.245 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_add_item
-21:11:38.245 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.245 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.246 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/items
-21:11:38.246 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/items
+09:51:34.976 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;laptop1&quot;,&quot;reservedQuantity&quot;:1,&quot;totalReserved&quot;:2,&quot;availableQuantity&quot;:8},&quot;timestamp&quot;:&quot;2025-12-11T09:51:34.9764648&quot;}
+09:51:34.976 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;laptop1&quot;,&quot;reservedQuantity&quot;:1,&quot;totalReserved&quot;:2,&quot;availableQuantity&quot;:8},&quot;timestamp&quot;:&quot;2025-12-11T09:51:34.9764648&quot;}
+RESERVE INVENTORY Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;laptop1&quot;,&quot;reservedQuantity&quot;:1,&quot;totalReserved&quot;:2,&quot;availableQuantity&quot;:8},&quot;timestamp&quot;:&quot;2025-12-11T09:51:34.9764648&quot;}
+09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_reserve
+09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_reserve
+09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_add_item
+09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_add_item
+09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.009 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/items
+09:51:35.009 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/items
 Request method:	POST
 Request URI:	http://localhost:8080/api/api/cart/user1/items
 Proxy:			&lt;none&gt;
@@ -260,23 +260,23 @@ Body:
     &quot;productId&quot;: &quot;laptop1&quot;,
     &quot;quantity&quot;: 1
 }
-21:11:38.354 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;unitPrice&quot;:1299.99,&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.3476389&quot;}
-21:11:38.354 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;unitPrice&quot;:1299.99,&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.3476389&quot;}
-ADD ITEM TO CART Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;unitPrice&quot;:1299.99,&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.3476389&quot;}
-21:11:38.384 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.384 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.384 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_add_item
-21:11:38.384 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_add_item
-21:11:38.385 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.385 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.400 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.400 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.401 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_get
-21:11:38.401 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_get
-21:11:38.403 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.403 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.404 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/cart/user1
-21:11:38.404 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/cart/user1
+09:51:35.066 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.0599128&quot;}
+09:51:35.066 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.0599128&quot;}
+ADD ITEM TO CART Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.0599128&quot;}
+09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_add_item
+09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_add_item
+09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_get
+09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_get
+09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.100 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/cart/user1
+09:51:35.100 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/cart/user1
 Request method:	GET
 Request URI:	http://localhost:8080/api/api/cart/user1
 Proxy:			&lt;none&gt;
@@ -289,23 +289,23 @@ Headers:		Accept=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-21:11:38.456 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:0.0,&quot;tax&quot;:0.0,&quot;total&quot;:0.0,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.4409868&quot;}
-21:11:38.456 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:0.0,&quot;tax&quot;:0.0,&quot;total&quot;:0.0,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.4409868&quot;}
-GET CART Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:0.0,&quot;tax&quot;:0.0,&quot;total&quot;:0.0,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.4409868&quot;}
-21:11:38.457 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.457 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.458 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_get
-21:11:38.458 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_get
-21:11:38.459 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.459 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.468 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.468 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.469 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_calculate
-21:11:38.469 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_calculate
-21:11:38.472 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.472 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.473 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/calculate
-21:11:38.473 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/calculate
+09:51:35.143 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:0.0,&quot;tax&quot;:0.0,&quot;total&quot;:0.0,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.1328081&quot;}
+09:51:35.143 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:0.0,&quot;tax&quot;:0.0,&quot;total&quot;:0.0,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.1328081&quot;}
+GET CART Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:0.0,&quot;tax&quot;:0.0,&quot;total&quot;:0.0,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.1328081&quot;}
+09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_get
+09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_get
+09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.155 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.155 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.157 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_calculate
+09:51:35.157 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_calculate
+09:51:35.157 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.157 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.157 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/calculate
+09:51:35.157 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/calculate
 Request method:	POST
 Request URI:	http://localhost:8080/api/api/cart/user1/calculate
 Proxy:			&lt;none&gt;
@@ -318,23 +318,23 @@ Headers:		Accept=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-21:11:38.521 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:1299.99,&quot;tax&quot;:103.9992,&quot;total&quot;:1403.9892,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.5181703&quot;}
-21:11:38.521 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:1299.99,&quot;tax&quot;:103.9992,&quot;total&quot;:1403.9892,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.5181703&quot;}
-CALCULATE CART Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:1299.99,&quot;tax&quot;:103.9992,&quot;total&quot;:1403.9892,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.5181703&quot;}
-21:11:38.523 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.523 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.523 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_calculate
-21:11:38.523 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_calculate
-21:11:38.523 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.523 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.536 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.536 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.536 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_create
-21:11:38.536 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_create
-21:11:38.537 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.537 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.537 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/orders
-21:11:38.537 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/orders
+09:51:35.191 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:1299.99,&quot;tax&quot;:103.9992,&quot;total&quot;:1403.9892,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.1841907&quot;}
+09:51:35.191 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:1299.99,&quot;tax&quot;:103.9992,&quot;total&quot;:1403.9892,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.1841907&quot;}
+CALCULATE CART Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;subtotal&quot;:1299.99,&quot;tax&quot;:103.9992,&quot;total&quot;:1403.9892,&quot;discountCode&quot;:null,&quot;discountAmount&quot;:0.0},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.1841907&quot;}
+09:51:35.192 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.192 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.193 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_calculate
+09:51:35.193 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_calculate
+09:51:35.193 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.193 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.200 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.200 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.202 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_create
+09:51:35.202 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_create
+09:51:35.202 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.202 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.202 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/orders
+09:51:35.202 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/orders
 Request method:	POST
 Request URI:	http://localhost:8080/api/api/orders
 Proxy:			&lt;none&gt;
@@ -350,29 +350,29 @@ Body:
 {
     &quot;userId&quot;: &quot;user1&quot;
 }
-21:11:38.571 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;status&quot;:&quot;CREATED&quot;,&quot;createdAt&quot;:&quot;2025-12-10T21:11:38.5675208&quot;,&quot;total&quot;:1403.9892},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.5675208&quot;}
-21:11:38.571 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;status&quot;:&quot;CREATED&quot;,&quot;createdAt&quot;:&quot;2025-12-10T21:11:38.5675208&quot;,&quot;total&quot;:1403.9892},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.5675208&quot;}
-CREATE ORDER Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;status&quot;:&quot;CREATED&quot;,&quot;createdAt&quot;:&quot;2025-12-10T21:11:38.5675208&quot;,&quot;total&quot;:1403.9892},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.5675208&quot;}
-21:11:38.656 [Test worker] INFO  c.testautomation.helpers.TestLogger - Created OrderId: 9a1b0af8-010c-49e5-9cc5-db88ab4eef15
-21:11:38.656 [Test worker] INFO  c.testautomation.helpers.TestLogger - Created OrderId: 9a1b0af8-010c-49e5-9cc5-db88ab4eef15
-21:11:38.657 [Test worker] INFO  c.testautomation.helpers.TestLogger - Order Total: 1403.9893
-21:11:38.657 [Test worker] INFO  c.testautomation.helpers.TestLogger - Order Total: 1403.9893
-21:11:38.667 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.667 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.668 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_create
-21:11:38.668 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_create
-21:11:38.669 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.669 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.680 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.680 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.681 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_read
-21:11:38.681 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_read
-21:11:38.682 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.682 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.683 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9a1b0af8-010c-49e5-9cc5-db88ab4eef15
-21:11:38.683 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9a1b0af8-010c-49e5-9cc5-db88ab4eef15
+09:51:35.241 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;status&quot;:&quot;CREATED&quot;,&quot;createdAt&quot;:&quot;2025-12-11T09:51:35.2352691&quot;,&quot;total&quot;:1403.9892},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.2352691&quot;}
+09:51:35.241 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;status&quot;:&quot;CREATED&quot;,&quot;createdAt&quot;:&quot;2025-12-11T09:51:35.2352691&quot;,&quot;total&quot;:1403.9892},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.2352691&quot;}
+CREATE ORDER Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;status&quot;:&quot;CREATED&quot;,&quot;createdAt&quot;:&quot;2025-12-11T09:51:35.2352691&quot;,&quot;total&quot;:1403.9892},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.2352691&quot;}
+09:51:35.318 [Test worker] INFO  c.testautomation.helpers.TestLogger - Created OrderId: 9382df36-53de-47ad-acf7-3883f28db88d
+09:51:35.318 [Test worker] INFO  c.testautomation.helpers.TestLogger - Created OrderId: 9382df36-53de-47ad-acf7-3883f28db88d
+09:51:35.326 [Test worker] INFO  c.testautomation.helpers.TestLogger - Order Total: 1403.9893
+09:51:35.326 [Test worker] INFO  c.testautomation.helpers.TestLogger - Order Total: 1403.9893
+09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_create
+09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_create
+09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_read
+09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_read
+09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.343 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9382df36-53de-47ad-acf7-3883f28db88d
+09:51:35.343 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9382df36-53de-47ad-acf7-3883f28db88d
 Request method:	GET
-Request URI:	http://localhost:8080/api/api/orders/9a1b0af8-010c-49e5-9cc5-db88ab4eef15
+Request URI:	http://localhost:8080/api/api/orders/9382df36-53de-47ad-acf7-3883f28db88d
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -383,25 +383,25 @@ Headers:		Accept=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-21:11:38.726 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CREATED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-10T21:11:38.5675208&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.7191038&quot;}
-21:11:38.726 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CREATED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-10T21:11:38.5675208&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.7191038&quot;}
-READ ORDER Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CREATED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-10T21:11:38.5675208&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.7191038&quot;}
-21:11:38.785 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.785 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.786 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_read
-21:11:38.786 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_read
-21:11:38.786 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.786 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.799 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.799 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.800 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_update_status
-21:11:38.800 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_update_status
-21:11:38.801 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.801 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.803 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/orders/9a1b0af8-010c-49e5-9cc5-db88ab4eef15/status
-21:11:38.803 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/orders/9a1b0af8-010c-49e5-9cc5-db88ab4eef15/status
+09:51:35.373 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CREATED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-11T09:51:35.2352691&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.3678357&quot;}
+09:51:35.373 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CREATED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-11T09:51:35.2352691&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.3678357&quot;}
+READ ORDER Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CREATED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-11T09:51:35.2352691&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.3678357&quot;}
+09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_read
+09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_read
+09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_update_status
+09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_update_status
+09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.434 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/orders/9382df36-53de-47ad-acf7-3883f28db88d/status
+09:51:35.434 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/orders/9382df36-53de-47ad-acf7-3883f28db88d/status
 Request method:	PUT
-Request URI:	http://localhost:8080/api/api/orders/9a1b0af8-010c-49e5-9cc5-db88ab4eef15/status
+Request URI:	http://localhost:8080/api/api/orders/9382df36-53de-47ad-acf7-3883f28db88d/status
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -415,25 +415,25 @@ Body:
 {
     &quot;status&quot;: &quot;CONFIRMED&quot;
 }
-21:11:38.854 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;updatedAt&quot;:&quot;2025-12-10T21:11:38.8505382&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.8505382&quot;}
-21:11:38.854 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;updatedAt&quot;:&quot;2025-12-10T21:11:38.8505382&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.8505382&quot;}
-UPDATE ORDER STATUS Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;updatedAt&quot;:&quot;2025-12-10T21:11:38.8505382&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.8505382&quot;}
-21:11:38.883 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.883 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.884 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_update_status
-21:11:38.884 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_update_status
-21:11:38.885 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.885 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.899 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.899 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.899 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_verify
-21:11:38.899 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_verify
-21:11:38.900 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.900 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.900 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9a1b0af8-010c-49e5-9cc5-db88ab4eef15
-21:11:38.900 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9a1b0af8-010c-49e5-9cc5-db88ab4eef15
+09:51:35.466 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;updatedAt&quot;:&quot;2025-12-11T09:51:35.4633&quot;,&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;status&quot;:&quot;CONFIRMED&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.4633&quot;}
+09:51:35.466 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;updatedAt&quot;:&quot;2025-12-11T09:51:35.4633&quot;,&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;status&quot;:&quot;CONFIRMED&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.4633&quot;}
+UPDATE ORDER STATUS Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;updatedAt&quot;:&quot;2025-12-11T09:51:35.4633&quot;,&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;status&quot;:&quot;CONFIRMED&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.4633&quot;}
+09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_update_status
+09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_update_status
+09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.493 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.493 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.499 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_verify
+09:51:35.499 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_verify
+09:51:35.499 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.499 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.499 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9382df36-53de-47ad-acf7-3883f28db88d
+09:51:35.499 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9382df36-53de-47ad-acf7-3883f28db88d
 Request method:	GET
-Request URI:	http://localhost:8080/api/api/orders/9a1b0af8-010c-49e5-9cc5-db88ab4eef15
+Request URI:	http://localhost:8080/api/api/orders/9382df36-53de-47ad-acf7-3883f28db88d
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -444,23 +444,23 @@ Headers:		Accept=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-21:11:38.938 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-10T21:11:38.5675208&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.934919&quot;}
-21:11:38.938 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-10T21:11:38.5675208&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.934919&quot;}
-VERIFY ORDER Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;5c0f4f16-690e-4dfb-9a2a-b0653a0ec414&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-10T21:11:38.5675208&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:38.934919&quot;}
-21:11:38.964 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.964 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.965 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_verify
-21:11:38.965 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_verify
-21:11:38.965 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.965 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.977 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.977 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.978 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_process
-21:11:38.978 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_process
-21:11:38.978 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.978 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:38.979 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
-21:11:38.979 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
+09:51:35.523 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-11T09:51:35.2352691&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.5195991&quot;}
+09:51:35.523 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-11T09:51:35.2352691&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.5195991&quot;}
+VERIFY ORDER Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;userId&quot;:&quot;user1&quot;,&quot;items&quot;:[{&quot;itemId&quot;:&quot;1ea6bc47-7614-4c26-95e0-80814bd84de5&quot;,&quot;productId&quot;:&quot;laptop1&quot;,&quot;productName&quot;:&quot;Gaming Laptop&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:1299.99,&quot;totalPrice&quot;:1299.99}],&quot;total&quot;:1403.9892,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;paymentId&quot;:null,&quot;createdAt&quot;:&quot;2025-12-11T09:51:35.2352691&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.5195991&quot;}
+09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_verify
+09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_verify
+09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_process
+09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_process
+09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.554 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
+09:51:35.554 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
 Request method:	POST
 Request URI:	http://localhost:8080/api/api/payments/process
 Proxy:			&lt;none&gt;
@@ -474,26 +474,26 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;orderId&quot;: &quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;,
+    &quot;orderId&quot;: &quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,
     &quot;amount&quot;: 1403.9893
 }
-21:11:39.029 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;amount&quot;:1403.9893,&quot;paymentId&quot;:&quot;3f015bfd-7868-45a4-9247-1772c2f4ca6c&quot;,&quot;status&quot;:&quot;SUCCESS&quot;,&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.023102&quot;}
-21:11:39.029 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;amount&quot;:1403.9893,&quot;paymentId&quot;:&quot;3f015bfd-7868-45a4-9247-1772c2f4ca6c&quot;,&quot;status&quot;:&quot;SUCCESS&quot;,&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.023102&quot;}
-PROCESS PAYMENT Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;amount&quot;:1403.9893,&quot;paymentId&quot;:&quot;3f015bfd-7868-45a4-9247-1772c2f4ca6c&quot;,&quot;status&quot;:&quot;SUCCESS&quot;,&quot;orderId&quot;:&quot;9a1b0af8-010c-49e5-9cc5-db88ab4eef15&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.023102&quot;}
-21:11:39.052 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.052 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.052 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_process
-21:11:39.052 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_process
-21:11:39.052 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.052 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.064 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.064 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.064 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_get_status
-21:11:39.064 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_get_status
-21:11:39.065 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.065 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.065 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/payments/payment123/status
-21:11:39.065 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/payments/payment123/status
+09:51:35.588 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;paymentId&quot;:&quot;f3ed8f70-4c71-423e-82df-89327013d390&quot;,&quot;status&quot;:&quot;SUCCESS&quot;,&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;amount&quot;:1403.9893},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.5860024&quot;}
+09:51:35.588 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;paymentId&quot;:&quot;f3ed8f70-4c71-423e-82df-89327013d390&quot;,&quot;status&quot;:&quot;SUCCESS&quot;,&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;amount&quot;:1403.9893},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.5860024&quot;}
+PROCESS PAYMENT Response: {&quot;success&quot;:true,&quot;code&quot;:&quot;SUCCESS&quot;,&quot;message&quot;:&quot;Operation completed successfully&quot;,&quot;data&quot;:{&quot;paymentId&quot;:&quot;f3ed8f70-4c71-423e-82df-89327013d390&quot;,&quot;status&quot;:&quot;SUCCESS&quot;,&quot;orderId&quot;:&quot;9382df36-53de-47ad-acf7-3883f28db88d&quot;,&quot;amount&quot;:1403.9893},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.5860024&quot;}
+09:51:35.608 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.608 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.609 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_process
+09:51:35.609 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_process
+09:51:35.609 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.609 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_get_status
+09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_get_status
+09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.619 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/payments/payment123/status
+09:51:35.619 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/payments/payment123/status
 Request method:	GET
 Request URI:	http://localhost:8080/api/api/payments/payment123/status
 Proxy:			&lt;none&gt;
@@ -506,23 +506,23 @@ Headers:		Accept=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-21:11:39.096 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;PAYMENT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Payment not found&quot;,&quot;data&quot;:{&quot;paymentId&quot;:&quot;payment123&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.0912731&quot;}
-21:11:39.096 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;PAYMENT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Payment not found&quot;,&quot;data&quot;:{&quot;paymentId&quot;:&quot;payment123&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.0912731&quot;}
-GET PAYMENT STATUS Response: {&quot;success&quot;:false,&quot;code&quot;:&quot;PAYMENT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Payment not found&quot;,&quot;data&quot;:{&quot;paymentId&quot;:&quot;payment123&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.0912731&quot;}
-21:11:39.097 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.097 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.098 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_get_status
-21:11:39.098 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_get_status
-21:11:39.098 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.098 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.108 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.108 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.108 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_product
-21:11:39.108 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_product
-21:11:39.109 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.109 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.109 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/invalid-product-xyz-999/status
-21:11:39.109 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/invalid-product-xyz-999/status
+09:51:35.648 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;PAYMENT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Payment not found&quot;,&quot;data&quot;:{&quot;paymentId&quot;:&quot;payment123&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.6433499&quot;}
+09:51:35.648 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;PAYMENT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Payment not found&quot;,&quot;data&quot;:{&quot;paymentId&quot;:&quot;payment123&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.6433499&quot;}
+GET PAYMENT STATUS Response: {&quot;success&quot;:false,&quot;code&quot;:&quot;PAYMENT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Payment not found&quot;,&quot;data&quot;:{&quot;paymentId&quot;:&quot;payment123&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.6433499&quot;}
+09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_get_status
+09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_get_status
+09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_product
+09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_product
+09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.660 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/invalid-product-xyz-999/status
+09:51:35.660 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/invalid-product-xyz-999/status
 Request method:	GET
 Request URI:	http://localhost:8080/api/api/inventory/invalid-product-xyz-999/status
 Proxy:			&lt;none&gt;
@@ -535,23 +535,23 @@ Headers:		Accept=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-21:11:39.142 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;PRODUCT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Product not found&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;invalid-product-xyz-999&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.138053&quot;}
-21:11:39.142 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;PRODUCT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Product not found&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;invalid-product-xyz-999&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.138053&quot;}
-GET INVALID INVENTORY Response: {&quot;success&quot;:false,&quot;code&quot;:&quot;PRODUCT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Product not found&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;invalid-product-xyz-999&quot;},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.138053&quot;}
-21:11:39.143 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.143 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.143 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_product
-21:11:39.143 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_product
-21:11:39.143 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.143 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.153 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.153 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.153 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_quantity
-21:11:39.153 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_quantity
-21:11:39.153 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.153 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.154 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/release
-21:11:39.154 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/release
+09:51:35.693 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;PRODUCT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Product not found&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;invalid-product-xyz-999&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.6879906&quot;}
+09:51:35.693 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;PRODUCT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Product not found&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;invalid-product-xyz-999&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.6879906&quot;}
+GET INVALID INVENTORY Response: {&quot;success&quot;:false,&quot;code&quot;:&quot;PRODUCT_NOT_FOUND&quot;,&quot;message&quot;:&quot;Product not found&quot;,&quot;data&quot;:{&quot;productId&quot;:&quot;invalid-product-xyz-999&quot;},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.6879906&quot;}
+09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_product
+09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_product
+09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_quantity
+09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_quantity
+09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.701 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/release
+09:51:35.701 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/release
 Request method:	PUT
 Request URI:	http://localhost:8080/api/api/inventory/laptop1/release
 Proxy:			&lt;none&gt;
@@ -567,23 +567,23 @@ Body:
 {
     &quot;quantity&quot;: -1
 }
-21:11:39.186 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=400, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;INVALID_QUANTITY&quot;,&quot;message&quot;:&quot;Quantity must be positive&quot;,&quot;data&quot;:{&quot;provided&quot;:-1},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.1842401&quot;}
-21:11:39.186 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=400, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;INVALID_QUANTITY&quot;,&quot;message&quot;:&quot;Quantity must be positive&quot;,&quot;data&quot;:{&quot;provided&quot;:-1},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.1842401&quot;}
-RELEASE INVALID Response: {&quot;success&quot;:false,&quot;code&quot;:&quot;INVALID_QUANTITY&quot;,&quot;message&quot;:&quot;Quantity must be positive&quot;,&quot;data&quot;:{&quot;provided&quot;:-1},&quot;timestamp&quot;:&quot;2025-12-10T21:11:39.1842401&quot;}
-21:11:39.187 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.187 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.188 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_quantity
-21:11:39.188 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_quantity
-21:11:39.188 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.188 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.198 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.198 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.198 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_payment_missing_orderid
-21:11:39.198 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_payment_missing_orderid
-21:11:39.198 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.198 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.199 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
-21:11:39.199 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
+09:51:35.736 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=400, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;INVALID_QUANTITY&quot;,&quot;message&quot;:&quot;Quantity must be positive&quot;,&quot;data&quot;:{&quot;provided&quot;:-1},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.7327744&quot;}
+09:51:35.736 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=400, Body={&quot;success&quot;:false,&quot;code&quot;:&quot;INVALID_QUANTITY&quot;,&quot;message&quot;:&quot;Quantity must be positive&quot;,&quot;data&quot;:{&quot;provided&quot;:-1},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.7327744&quot;}
+RELEASE INVALID Response: {&quot;success&quot;:false,&quot;code&quot;:&quot;INVALID_QUANTITY&quot;,&quot;message&quot;:&quot;Quantity must be positive&quot;,&quot;data&quot;:{&quot;provided&quot;:-1},&quot;timestamp&quot;:&quot;2025-12-11T09:51:35.7327744&quot;}
+09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_quantity
+09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_quantity
+09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_payment_missing_orderid
+09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_payment_missing_orderid
+09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.747 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
+09:51:35.747 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
 Request method:	POST
 Request URI:	http://localhost:8080/api/api/payments/process
 Proxy:			&lt;none&gt;
@@ -599,15 +599,15 @@ Body:
 {
     &quot;amount&quot;: 99.99
 }
-21:11:39.265 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=500, Body={&quot;timestamp&quot;:&quot;2025-12-10T20:11:39.254+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/api/api/payments/process&quot;}
-21:11:39.265 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=500, Body={&quot;timestamp&quot;:&quot;2025-12-10T20:11:39.254+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/api/api/payments/process&quot;}
-PAYMENT MISSING ORDERID Response: {&quot;timestamp&quot;:&quot;2025-12-10T20:11:39.254+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/api/api/payments/process&quot;}
-21:11:39.266 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.266 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.266 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_payment_missing_orderid
-21:11:39.266 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_payment_missing_orderid
-21:11:39.267 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-21:11:39.267 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.818 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=500, Body={&quot;timestamp&quot;:&quot;2025-12-11T08:51:35.804+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/api/api/payments/process&quot;}
+09:51:35.818 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=500, Body={&quot;timestamp&quot;:&quot;2025-12-11T08:51:35.804+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/api/api/payments/process&quot;}
+PAYMENT MISSING ORDERID Response: {&quot;timestamp&quot;:&quot;2025-12-11T08:51:35.804+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/api/api/payments/process&quot;}
+09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_payment_missing_orderid
+09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_payment_missing_orderid
+09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
 </pre>
 </span>
 </div>
@@ -619,7 +619,7 @@ PAYMENT MISSING ORDERID Response: {&quot;timestamp&quot;:&quot;2025-12-10T20:11:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.0.0</a> at 2025. dec. 10. 21:11:39</p>
+<a href="https://www.gradle.org">Gradle 9.0.0</a> at 2025. dec. 11. 9:52:37</p>
 </div>
 </div>
 </body>
