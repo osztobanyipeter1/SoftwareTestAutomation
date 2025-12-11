@@ -43,28 +43,15 @@ pipeline {
             }
         }
 
-        stage('API Tests') {
+        stage('Tests') {
             steps {
                 echo "====================================="
-                echo "Running API Tests (14 tests)..."
+                echo "Running All Tests (27 tests)..."
                 echo "====================================="
 
                 bat '''
                     cd api-testing-demo-java_starter
-                    gradle clean test -Ptag=api --no-build-cache
-                '''
-            }
-        }
-
-        stage('UI Tests') {
-            steps {
-                echo "====================================="
-                echo "Running UI Tests (13 tests)..."
-                echo "====================================="
-
-                bat '''
-                    cd api-testing-demo-java_starter
-                    gradle clean test -Ptag=ui --no-build-cache
+                    gradle clean test
                 '''
             }
         }
