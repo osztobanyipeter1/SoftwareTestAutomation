@@ -8,7 +8,7 @@ This project demonstrates a **professional-grade test automation framework** for
 
 - **14 API Tests** - RESTAssured, CRUD operations, negative testing
 - **13 UI Tests** - Selenium WebDriver, Page Object Model, explicit waits
-- **3 E2E Flows** - Complete checkout scenarios
+- **E2E Flows** - Complete checkout scenarios
 - **Framework Features** - Config management, logging, helper utilities, CI/CD integration
 
 **Target Application for UI tests**: [SauceDemo](https://www.saucedemo.com/)
