@@ -112,7 +112,7 @@ git clone https://github.com/osztobanyipeter1/SoftwareTestAutomation.git
 cd api-testing-demo-java_starter
 ```
 
-### 2. Install Dependencies
+### 2. Install Dependencies (Optional)
 
 Gradle automatically downloads all dependencies from `build.gradle`:
 
@@ -157,7 +157,7 @@ cd api-testing-demo-java_starter
 gradle clean test -Ptag=api --no-build-cache
 
 # UI tests
-#13/13 has to work
+#13/13 has to work, but sometimes there is a problem and the 9,10,11,12 is goint to fail. Maybe its a cache problem on my system. But the other calls have to work.
 cd api-testing-demo-java_starter
 gradle clean test -Ptag=ui --no-build-cache
 ```
