@@ -1,394 +1,146 @@
-2025-12-11 09:51:30.451 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:30.451 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:30.465 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: ComprehensiveApiTest Init
-2025-12-11 09:51:30.465 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: ComprehensiveApiTest Init
-2025-12-11 09:51:30.465 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:30.465 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:30.537 [Test worker] INFO  c.testautomation.helpers.TestLogger - Initialized with userId: user1, productId: laptop1
-2025-12-11 09:51:30.537 [Test worker] INFO  c.testautomation.helpers.TestLogger - Initialized with userId: user1, productId: laptop1
-2025-12-11 09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_get_status
-2025-12-11 09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_get_status
-2025-12-11 09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:30.638 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:30.638 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/laptop1/status
-2025-12-11 09:51:30.638 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/laptop1/status
-2025-12-11 09:51:33.586 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"productId":"laptop1","totalStock":10,"reservedQuantity":0,"availableQuantity":10,"price":1299.99,"category":"Electronics","productName":"Gaming Laptop"},"timestamp":"2025-12-11T09:51:33.3844154"}
-2025-12-11 09:51:33.586 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"productId":"laptop1","totalStock":10,"reservedQuantity":0,"availableQuantity":10,"price":1299.99,"category":"Electronics","productName":"Gaming Laptop"},"timestamp":"2025-12-11T09:51:33.3844154"}
-2025-12-11 09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_get_status
-2025-12-11 09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_get_status
-2025-12-11 09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:34.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:34.834 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:34.834 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:34.834 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_reserve
-2025-12-11 09:51:34.834 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: inventory_reserve
-2025-12-11 09:51:34.839 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:34.839 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:34.839 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/reserve
-2025-12-11 09:51:34.839 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/reserve
-2025-12-11 09:51:34.976 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"productId":"laptop1","reservedQuantity":1,"totalReserved":2,"availableQuantity":8},"timestamp":"2025-12-11T09:51:34.9764648"}
-2025-12-11 09:51:34.976 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"productId":"laptop1","reservedQuantity":1,"totalReserved":2,"availableQuantity":8},"timestamp":"2025-12-11T09:51:34.9764648"}
-2025-12-11 09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_reserve
-2025-12-11 09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: inventory_reserve
-2025-12-11 09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.000 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_add_item
-2025-12-11 09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_add_item
-2025-12-11 09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.009 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.009 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/items
-2025-12-11 09:51:35.009 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/items
-2025-12-11 09:51:35.066 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"productName":"Gaming Laptop","quantity":1,"unitPrice":1299.99,"itemId":"1ea6bc47-7614-4c26-95e0-80814bd84de5"},"timestamp":"2025-12-11T09:51:35.0599128"}
-2025-12-11 09:51:35.066 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"productName":"Gaming Laptop","quantity":1,"unitPrice":1299.99,"itemId":"1ea6bc47-7614-4c26-95e0-80814bd84de5"},"timestamp":"2025-12-11T09:51:35.0599128"}
-2025-12-11 09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_add_item
-2025-12-11 09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_add_item
-2025-12-11 09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.085 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_get
-2025-12-11 09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_get
-2025-12-11 09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.100 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.100 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/cart/user1
-2025-12-11 09:51:35.100 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/cart/user1
-2025-12-11 09:51:35.143 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"userId":"user1","items":[{"itemId":"1ea6bc47-7614-4c26-95e0-80814bd84de5","productId":"laptop1","productName":"Gaming Laptop","quantity":1,"unitPrice":1299.99,"totalPrice":1299.99}],"subtotal":0.0,"tax":0.0,"total":0.0,"discountCode":null,"discountAmount":0.0},"timestamp":"2025-12-11T09:51:35.1328081"}
-2025-12-11 09:51:35.143 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"userId":"user1","items":[{"itemId":"1ea6bc47-7614-4c26-95e0-80814bd84de5","productId":"laptop1","productName":"Gaming Laptop","quantity":1,"unitPrice":1299.99,"totalPrice":1299.99}],"subtotal":0.0,"tax":0.0,"total":0.0,"discountCode":null,"discountAmount":0.0},"timestamp":"2025-12-11T09:51:35.1328081"}
-2025-12-11 09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_get
-2025-12-11 09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_get
-2025-12-11 09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.145 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.155 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.155 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.157 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_calculate
-2025-12-11 09:51:35.157 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: cart_calculate
-2025-12-11 09:51:35.157 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.157 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.157 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/calculate
-2025-12-11 09:51:35.157 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/cart/user1/calculate
-2025-12-11 09:51:35.191 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"userId":"user1","items":[{"itemId":"1ea6bc47-7614-4c26-95e0-80814bd84de5","productId":"laptop1","productName":"Gaming Laptop","quantity":1,"unitPrice":1299.99,"totalPrice":1299.99}],"subtotal":1299.99,"tax":103.9992,"total":1403.9892,"discountCode":null,"discountAmount":0.0},"timestamp":"2025-12-11T09:51:35.1841907"}
-2025-12-11 09:51:35.191 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"userId":"user1","items":[{"itemId":"1ea6bc47-7614-4c26-95e0-80814bd84de5","productId":"laptop1","productName":"Gaming Laptop","quantity":1,"unitPrice":1299.99,"totalPrice":1299.99}],"subtotal":1299.99,"tax":103.9992,"total":1403.9892,"discountCode":null,"discountAmount":0.0},"timestamp":"2025-12-11T09:51:35.1841907"}
-2025-12-11 09:51:35.192 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.192 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.193 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_calculate
-2025-12-11 09:51:35.193 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: cart_calculate
-2025-12-11 09:51:35.193 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.193 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.200 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.200 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.202 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_create
-2025-12-11 09:51:35.202 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_create
-2025-12-11 09:51:35.202 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.202 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.202 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/orders
-2025-12-11 09:51:35.202 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/orders
-2025-12-11 09:51:35.241 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"orderId":"9382df36-53de-47ad-acf7-3883f28db88d","status":"CREATED","createdAt":"2025-12-11T09:51:35.2352691","total":1403.9892},"timestamp":"2025-12-11T09:51:35.2352691"}
-2025-12-11 09:51:35.241 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"orderId":"9382df36-53de-47ad-acf7-3883f28db88d","status":"CREATED","createdAt":"2025-12-11T09:51:35.2352691","total":1403.9892},"timestamp":"2025-12-11T09:51:35.2352691"}
-2025-12-11 09:51:35.318 [Test worker] INFO  c.testautomation.helpers.TestLogger - Created OrderId: 9382df36-53de-47ad-acf7-3883f28db88d
-2025-12-11 09:51:35.318 [Test worker] INFO  c.testautomation.helpers.TestLogger - Created OrderId: 9382df36-53de-47ad-acf7-3883f28db88d
-2025-12-11 09:51:35.326 [Test worker] INFO  c.testautomation.helpers.TestLogger - Order Total: 1403.9893
-2025-12-11 09:51:35.326 [Test worker] INFO  c.testautomation.helpers.TestLogger - Order Total: 1403.9893
-2025-12-11 09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_create
-2025-12-11 09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_create
-2025-12-11 09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.334 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_read
-2025-12-11 09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_read
-2025-12-11 09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.343 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.343 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9382df36-53de-47ad-acf7-3883f28db88d
-2025-12-11 09:51:35.343 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9382df36-53de-47ad-acf7-3883f28db88d
-2025-12-11 09:51:35.373 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"orderId":"9382df36-53de-47ad-acf7-3883f28db88d","userId":"user1","items":[{"itemId":"1ea6bc47-7614-4c26-95e0-80814bd84de5","productId":"laptop1","productName":"Gaming Laptop","quantity":1,"unitPrice":1299.99,"totalPrice":1299.99}],"total":1403.9892,"status":"CREATED","paymentId":null,"createdAt":"2025-12-11T09:51:35.2352691"},"timestamp":"2025-12-11T09:51:35.3678357"}
-2025-12-11 09:51:35.373 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"orderId":"9382df36-53de-47ad-acf7-3883f28db88d","userId":"user1","items":[{"itemId":"1ea6bc47-7614-4c26-95e0-80814bd84de5","productId":"laptop1","productName":"Gaming Laptop","quantity":1,"unitPrice":1299.99,"totalPrice":1299.99}],"total":1403.9892,"status":"CREATED","paymentId":null,"createdAt":"2025-12-11T09:51:35.2352691"},"timestamp":"2025-12-11T09:51:35.3678357"}
-2025-12-11 09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_read
-2025-12-11 09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_read
-2025-12-11 09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.426 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_update_status
-2025-12-11 09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_update_status
-2025-12-11 09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.434 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.434 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/orders/9382df36-53de-47ad-acf7-3883f28db88d/status
-2025-12-11 09:51:35.434 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/orders/9382df36-53de-47ad-acf7-3883f28db88d/status
-2025-12-11 09:51:35.466 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"updatedAt":"2025-12-11T09:51:35.4633","orderId":"9382df36-53de-47ad-acf7-3883f28db88d","status":"CONFIRMED"},"timestamp":"2025-12-11T09:51:35.4633"}
-2025-12-11 09:51:35.466 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"updatedAt":"2025-12-11T09:51:35.4633","orderId":"9382df36-53de-47ad-acf7-3883f28db88d","status":"CONFIRMED"},"timestamp":"2025-12-11T09:51:35.4633"}
-2025-12-11 09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_update_status
-2025-12-11 09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_update_status
-2025-12-11 09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.486 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.493 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.493 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.499 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_verify
-2025-12-11 09:51:35.499 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: order_verify
-2025-12-11 09:51:35.499 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.499 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.499 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9382df36-53de-47ad-acf7-3883f28db88d
-2025-12-11 09:51:35.499 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/orders/9382df36-53de-47ad-acf7-3883f28db88d
-2025-12-11 09:51:35.523 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"orderId":"9382df36-53de-47ad-acf7-3883f28db88d","userId":"user1","items":[{"itemId":"1ea6bc47-7614-4c26-95e0-80814bd84de5","productId":"laptop1","productName":"Gaming Laptop","quantity":1,"unitPrice":1299.99,"totalPrice":1299.99}],"total":1403.9892,"status":"CONFIRMED","paymentId":null,"createdAt":"2025-12-11T09:51:35.2352691"},"timestamp":"2025-12-11T09:51:35.5195991"}
-2025-12-11 09:51:35.523 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"orderId":"9382df36-53de-47ad-acf7-3883f28db88d","userId":"user1","items":[{"itemId":"1ea6bc47-7614-4c26-95e0-80814bd84de5","productId":"laptop1","productName":"Gaming Laptop","quantity":1,"unitPrice":1299.99,"totalPrice":1299.99}],"total":1403.9892,"status":"CONFIRMED","paymentId":null,"createdAt":"2025-12-11T09:51:35.2352691"},"timestamp":"2025-12-11T09:51:35.5195991"}
-2025-12-11 09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_verify
-2025-12-11 09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: order_verify
-2025-12-11 09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.545 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_process
-2025-12-11 09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_process
-2025-12-11 09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.554 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.554 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
-2025-12-11 09:51:35.554 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
-2025-12-11 09:51:35.588 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"paymentId":"f3ed8f70-4c71-423e-82df-89327013d390","status":"SUCCESS","orderId":"9382df36-53de-47ad-acf7-3883f28db88d","amount":1403.9893},"timestamp":"2025-12-11T09:51:35.5860024"}
-2025-12-11 09:51:35.588 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=200, Body={"success":true,"code":"SUCCESS","message":"Operation completed successfully","data":{"paymentId":"f3ed8f70-4c71-423e-82df-89327013d390","status":"SUCCESS","orderId":"9382df36-53de-47ad-acf7-3883f28db88d","amount":1403.9893},"timestamp":"2025-12-11T09:51:35.5860024"}
-2025-12-11 09:51:35.608 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.608 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.609 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_process
-2025-12-11 09:51:35.609 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_process
-2025-12-11 09:51:35.609 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.609 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_get_status
-2025-12-11 09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: payment_get_status
-2025-12-11 09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.619 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.619 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/payments/payment123/status
-2025-12-11 09:51:35.619 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/payments/payment123/status
-2025-12-11 09:51:35.648 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={"success":false,"code":"PAYMENT_NOT_FOUND","message":"Payment not found","data":{"paymentId":"payment123"},"timestamp":"2025-12-11T09:51:35.6433499"}
-2025-12-11 09:51:35.648 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={"success":false,"code":"PAYMENT_NOT_FOUND","message":"Payment not found","data":{"paymentId":"payment123"},"timestamp":"2025-12-11T09:51:35.6433499"}
-2025-12-11 09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_get_status
-2025-12-11 09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: payment_get_status
-2025-12-11 09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.650 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_product
-2025-12-11 09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_product
-2025-12-11 09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.660 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.660 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/invalid-product-xyz-999/status
-2025-12-11 09:51:35.660 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: GET /api/inventory/invalid-product-xyz-999/status
-2025-12-11 09:51:35.693 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={"success":false,"code":"PRODUCT_NOT_FOUND","message":"Product not found","data":{"productId":"invalid-product-xyz-999"},"timestamp":"2025-12-11T09:51:35.6879906"}
-2025-12-11 09:51:35.693 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=404, Body={"success":false,"code":"PRODUCT_NOT_FOUND","message":"Product not found","data":{"productId":"invalid-product-xyz-999"},"timestamp":"2025-12-11T09:51:35.6879906"}
-2025-12-11 09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_product
-2025-12-11 09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_product
-2025-12-11 09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.693 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_quantity
-2025-12-11 09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_invalid_quantity
-2025-12-11 09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.701 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.701 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/release
-2025-12-11 09:51:35.701 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: PUT /api/inventory/laptop1/release
-2025-12-11 09:51:35.736 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=400, Body={"success":false,"code":"INVALID_QUANTITY","message":"Quantity must be positive","data":{"provided":-1},"timestamp":"2025-12-11T09:51:35.7327744"}
-2025-12-11 09:51:35.736 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=400, Body={"success":false,"code":"INVALID_QUANTITY","message":"Quantity must be positive","data":{"provided":-1},"timestamp":"2025-12-11T09:51:35.7327744"}
-2025-12-11 09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_quantity
-2025-12-11 09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_invalid_quantity
-2025-12-11 09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_payment_missing_orderid
-2025-12-11 09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: negative_payment_missing_orderid
-2025-12-11 09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.747 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.747 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
-2025-12-11 09:51:35.747 [Test worker] DEBUG c.testautomation.helpers.TestLogger - API CALL: POST /api/payments/process
-2025-12-11 09:51:35.818 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=500, Body={"timestamp":"2025-12-11T08:51:35.804+00:00","status":500,"error":"Internal Server Error","message":"No message available","path":"/api/api/payments/process"}
-2025-12-11 09:51:35.818 [Test worker] DEBUG c.testautomation.helpers.TestLogger - RESPONSE: Status=500, Body={"timestamp":"2025-12-11T08:51:35.804+00:00","status":500,"error":"Internal Server Error","message":"No message available","path":"/api/api/payments/process"}
-2025-12-11 09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_payment_missing_orderid
-2025-12-11 09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: negative_payment_missing_orderid
-2025-12-11 09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:35.820 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:36.309 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.42 (resolved driver for Chrome 143)
-2025-12-11 09:51:36.367 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\oszto\.cache\selenium\chromedriver\win64\143.0.7499.42\chromedriver.exe
-2025-12-11 09:51:40.582 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:40.582 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:40.582 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_login_page_loads
-2025-12-11 09:51:40.582 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_login_page_loads
-2025-12-11 09:51:40.582 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:40.582 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:40.835 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:40.835 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:40.835 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_login_page_loads
-2025-12-11 09:51:40.835 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_login_page_loads
-2025-12-11 09:51:40.836 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:40.836 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:43.883 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:43.883 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:43.884 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_successful_login
-2025-12-11 09:51:43.884 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_successful_login
-2025-12-11 09:51:43.884 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:43.884 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:44.774 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:44.774 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:44.774 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_successful_login
-2025-12-11 09:51:44.774 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_successful_login
-2025-12-11 09:51:44.775 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:44.775 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:47.495 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:47.495 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:47.495 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_invalid_login
-2025-12-11 09:51:47.495 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_invalid_login
-2025-12-11 09:51:47.495 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:47.495 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:48.462 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:48.462 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:48.462 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_invalid_login
-2025-12-11 09:51:48.462 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_invalid_login
-2025-12-11 09:51:48.462 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:48.462 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:51.223 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:51.223 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:51.225 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_products_page_loaded
-2025-12-11 09:51:51.225 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_products_page_loaded
-2025-12-11 09:51:51.225 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:51.225 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:52.786 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:52.786 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:52.787 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_products_page_loaded
-2025-12-11 09:51:52.787 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_products_page_loaded
-2025-12-11 09:51:52.787 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:52.787 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:55.761 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:55.761 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:55.761 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_get_product_list
-2025-12-11 09:51:55.761 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_get_product_list
-2025-12-11 09:51:55.762 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:55.762 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:56.746 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:56.746 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:56.746 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_get_product_list
-2025-12-11 09:51:56.746 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_get_product_list
-2025-12-11 09:51:56.746 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:56.746 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:59.618 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:59.618 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:59.618 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_add_to_cart
-2025-12-11 09:51:59.618 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_add_to_cart
-2025-12-11 09:51:59.618 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:51:59.618 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:00.576 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:00.576 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:00.576 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_add_to_cart
-2025-12-11 09:52:00.576 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_add_to_cart
-2025-12-11 09:52:00.576 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:00.576 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:03.546 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:03.546 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:03.546 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_verify_price
-2025-12-11 09:52:03.546 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_verify_price
-2025-12-11 09:52:03.548 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:03.548 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:04.322 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:04.322 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:04.322 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_verify_price
-2025-12-11 09:52:04.322 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_verify_price
-2025-12-11 09:52:04.322 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:04.322 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:07.250 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:07.250 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:07.252 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_cart_page
-2025-12-11 09:52:07.252 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_cart_page
-2025-12-11 09:52:07.252 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:07.252 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:09.190 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:09.190 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:09.191 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_cart_page
-2025-12-11 09:52:09.191 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_cart_page
-2025-12-11 09:52:09.191 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:09.191 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:12.169 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:12.169 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:12.169 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_remove_from_cart
-2025-12-11 09:52:12.169 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_remove_from_cart
-2025-12-11 09:52:12.169 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:12.169 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:14.400 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:14.400 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:14.400 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_remove_from_cart
-2025-12-11 09:52:14.400 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_remove_from_cart
-2025-12-11 09:52:14.402 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:14.402 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:19.529 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:19.529 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:19.529 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_waits_without_thread_sleep
-2025-12-11 09:52:19.529 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_waits_without_thread_sleep
-2025-12-11 09:52:19.529 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:19.529 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:20.104 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:20.104 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:20.104 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_waits_without_thread_sleep
-2025-12-11 09:52:20.104 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_waits_without_thread_sleep
-2025-12-11 09:52:20.104 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:20.104 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:23.368 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:23.368 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:23.368 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_complete_checkout
-2025-12-11 09:52:23.368 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_complete_checkout
-2025-12-11 09:52:23.370 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:23.370 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:25.665 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:25.665 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:25.666 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_e2e_complete_checkout
-2025-12-11 09:52:25.666 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_e2e_complete_checkout
-2025-12-11 09:52:25.666 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:25.666 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:28.560 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:28.560 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:28.562 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_multiple_products
-2025-12-11 09:52:28.562 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_multiple_products
-2025-12-11 09:52:28.562 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:28.562 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:30.641 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:30.641 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:30.641 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_e2e_multiple_products
-2025-12-11 09:52:30.641 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_e2e_multiple_products
-2025-12-11 09:52:30.641 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:30.641 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:33.460 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:33.460 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:33.460 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_cancel_checkout
-2025-12-11 09:52:33.460 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_cancel_checkout
-2025-12-11 09:52:33.462 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:33.462 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:36.848 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:36.848 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:36.848 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_e2e_cancel_checkout
-2025-12-11 09:52:36.848 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_e2e_cancel_checkout
-2025-12-11 09:52:36.848 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
-2025-12-11 09:52:36.848 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:45.695 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.42 (resolved driver for Chrome 143)
+2025-12-11 10:44:45.750 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\oszto\.cache\selenium\chromedriver\win64\143.0.7499.42\chromedriver.exe
+2025-12-11 10:44:48.740 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:48.740 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:48.741 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_login_page_loads
+2025-12-11 10:44:48.741 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_login_page_loads
+2025-12-11 10:44:48.741 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:48.741 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:48.984 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:48.984 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:48.984 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_login_page_loads
+2025-12-11 10:44:48.984 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_login_page_loads
+2025-12-11 10:44:48.984 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:48.984 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:51.735 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:51.735 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:51.735 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_successful_login
+2025-12-11 10:44:51.735 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_successful_login
+2025-12-11 10:44:51.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:51.736 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:52.807 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:52.807 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:52.808 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_successful_login
+2025-12-11 10:44:52.808 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_successful_login
+2025-12-11 10:44:52.809 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:52.809 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:55.354 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:55.354 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:55.354 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_invalid_login
+2025-12-11 10:44:55.354 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_invalid_login
+2025-12-11 10:44:55.354 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:55.354 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:55.951 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:55.951 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:55.952 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_invalid_login
+2025-12-11 10:44:55.952 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_invalid_login
+2025-12-11 10:44:55.952 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:55.952 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:58.860 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:58.860 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:58.861 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_products_page_loaded
+2025-12-11 10:44:58.861 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_products_page_loaded
+2025-12-11 10:44:58.867 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:58.867 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:59.893 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:59.893 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:59.895 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_products_page_loaded
+2025-12-11 10:44:59.895 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_products_page_loaded
+2025-12-11 10:44:59.895 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:44:59.895 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:02.436 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:02.436 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:02.438 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_get_product_list
+2025-12-11 10:45:02.438 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_get_product_list
+2025-12-11 10:45:02.438 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:02.438 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:03.805 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:03.805 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:03.807 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_get_product_list
+2025-12-11 10:45:03.807 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_get_product_list
+2025-12-11 10:45:03.807 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:03.807 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:06.592 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:06.592 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:06.592 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_add_to_cart
+2025-12-11 10:45:06.592 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_add_to_cart
+2025-12-11 10:45:06.592 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:06.592 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:07.480 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:07.480 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:07.480 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_add_to_cart
+2025-12-11 10:45:07.480 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_add_to_cart
+2025-12-11 10:45:07.482 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:07.482 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:10.071 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:10.071 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:10.073 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_verify_price
+2025-12-11 10:45:10.073 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_verify_price
+2025-12-11 10:45:10.075 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:10.075 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:11.059 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:11.059 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:11.059 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_verify_price
+2025-12-11 10:45:11.059 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_verify_price
+2025-12-11 10:45:11.061 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:11.061 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:15.227 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:15.227 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:15.229 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_cart_page
+2025-12-11 10:45:15.229 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_cart_page
+2025-12-11 10:45:15.229 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:15.229 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:16.420 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:16.420 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:16.421 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_cart_page
+2025-12-11 10:45:16.421 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_cart_page
+2025-12-11 10:45:16.421 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:16.421 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:19.106 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:19.106 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:19.106 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_remove_from_cart
+2025-12-11 10:45:19.106 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_remove_from_cart
+2025-12-11 10:45:19.110 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:19.110 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:24.062 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:24.062 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:24.064 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_waits_without_thread_sleep
+2025-12-11 10:45:24.064 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_waits_without_thread_sleep
+2025-12-11 10:45:24.064 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:24.064 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:24.661 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:24.661 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:24.661 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_waits_without_thread_sleep
+2025-12-11 10:45:24.661 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_waits_without_thread_sleep
+2025-12-11 10:45:24.662 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:24.662 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:27.226 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:27.226 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:27.226 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_complete_checkout
+2025-12-11 10:45:27.226 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_complete_checkout
+2025-12-11 10:45:27.227 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:27.227 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:42.282 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:42.282 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:42.282 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_multiple_products
+2025-12-11 10:45:42.282 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_multiple_products
+2025-12-11 10:45:42.284 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:42.284 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:45.850 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:45.850 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:45.850 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_e2e_multiple_products
+2025-12-11 10:45:45.850 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_e2e_multiple_products
+2025-12-11 10:45:45.851 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:45.851 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:48.518 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:48.518 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:48.520 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_cancel_checkout
+2025-12-11 10:45:48.520 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST START: test_e2e_cancel_checkout
+2025-12-11 10:45:48.520 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:48.520 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:51.943 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:51.943 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:51.943 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_e2e_cancel_checkout
+2025-12-11 10:45:51.943 [Test worker] INFO  c.testautomation.helpers.TestLogger - TEST END: test_e2e_cancel_checkout
+2025-12-11 10:45:51.943 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================
+2025-12-11 10:45:51.943 [Test worker] INFO  c.testautomation.helpers.TestLogger - ========================================

@@ -17,6 +17,43 @@ This project demonstrates a **professional-grade test automation framework** for
 
 ---
 
+### Done parts from Requirements.pdf
+
+| ID           | Description                                                                                                                                                                                                                                                                                           | Points   |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| **C1**       | Project builds and runs tests with gradle test                                                                                                                                                                                                                                                        | 4        |
+| **C2**       | Central configuration (cofig file, config.properties, API baseUrl, UI baseUrl, No hardcoded URL)                                                                                                                                                                                                      | 2        |
+| **C3**       | JUnit tags/ categories + running (API tests: gradle clean test -Ptag=api, UI tests: gradle clean test -Ptag=ui )                                                                                                                                                                                      | 2        |
+| **A1**       | Inventory endpoints (test 01- GET, test 02- PUT), Cart endpoints (test 03- POST, test 04- GET, test 05- POST), Order Endpoints (test 06- POST, test 07- GET, test 08- PUT), Payment endpoints (test 09- GET, test 10- POST, test 11- GET), Negative tests (test 12- GET, test 13- PUT, test 14- POST) | 6        |
+| **A2**       | Uses RestAssured consistency in RequestSpecFactory.java and in services                                                                                                                                                                                                                               | 2        |
+| **A3**       | FULL CRUD happy-path coverage with E2E CRUD flow (test 06, test 07, test 08, test 09)                                                                                                                                                                                                                 | 8        |
+| **A4**       | Negativ tests (test 12, test 13, test 14)                                                                                                                                                                                                                                                             | 2        |
+| **A5**       | RequestSpecFactory/RespondSpecFactory.java to avoid repetition                                                                                                                                                                                                                                        | 4        |
+| **A6**       | POJOS: CartItemRequest.java, CreateOrderRequest.java, ReserveInventoryRequest.java, UpdateOrderStatusRequest.java, ProcessPaymentRequest.java)                                                                                                                                                        | 3        |
+| **A7**       | Complete E2E flow: Inventory (Reserve) → Cart (Add) → Cart (Calculate) → Order (Create) → Order (Verify) → Payment (Process)                                                                                                                                                                          | 5        |
+| **U1**       | Basic UI tests: 01_LOGIN_PAGE_LOADS, 02_SUCCESSFUL_LOGIN, 03_INVALID_LOGIN, 04_PRODUCTS_LOAD, 05_PRODUCTS_NAMES                                                                                                                                                                                       | 5        |
+| **U2**       | Reusable locators in LoginPage.java, ProductPage.java, CartPage.java                                                                                                                                                                                                                                  | 2        |
+| **U3**       | Component-level coverage: 01_LOGIN_PAGE_LOADS, 02_SUCCESSFUL_LOGIN, 03_INVALID_LOGIN, 04_PRODUCTS_LOAD, 05_PRODUCTS_NAMES, 06_ADD_TO_CART, 07_PRODUCT_PRICE, 08_CART_PAGE, 09_REMOVE_FROM_CART, U4_WAITS, 10_E2E_COMPLETE_CHECKOUT, 11_E2E_MULTIPLE_PRODUCTS, 12_E2E_CANCEL_CHECKOUT                  | 7        |
+| **U4**       | Waits in RandomDelayHelper.java, BasePage.java (Explicit waits), and usage in Tests                                                                                                                                                                                                                   | 3        |
+| **U5**       | POM in LoginPage.java, ProductPage.java, CartPage.java, CheckoutPage.java                                                                                                                                                                                                                             | 4        |
+| **U6**       | BasePage + inheritance                                                                                                                                                                                                                                                                                | 5        |
+| **U7**       | E2E in 10_E2E_COMPLETE_CHECKOUT, 11_E2E_MULTIPLE_PRODUCTS, 12_E2E_CANCEL_CHECKOUT                                                                                                                                                                                                                     | 4        |
+| **F1**       | Extended configuration (Separate API + UI)                                                                                                                                                                                                                                                            | 4        |
+| **F2**       | Separated setup (ComprehensionApiTest.java, ComprehensiveUiTest.java)                                                                                                                                                                                                                                 | 4        |
+| **F3**       | Reusable helpers: RequestSpecFactory.java reused in InventoryService, CartService, OrderService, PaymentService & RandomDelayHelper.java reused in BasePage                                                                                                                                           | 3        |
+| **F4**       | Optional utilities layer in TestLogger.java                                                                                                                                                                                                                                                           | 2        |
+| **Q1,Q2,Q3** | Hopefully the code is understandable                                                                                                                                                                                                                                                                  | 8        |
+| **J1**       | Jenkinsfile job                                                                                                                                                                                                                                                                                       | 4        |
+| **J2**       | Jenkinsfile stored in repository but not contains UI tests.                                                                                                                                                                                                                                           | 3/6      |
+| **J3,J4**    | Not sure                                                                                                                                                                                                                                                                                              | ?/4      |
+| **G1,G2,G3** | Multiple commits, but not that meaningful, one feature branch                                                                                                                                                                                                                                         | ?/6      |
+| **R1,R2**    | Allure tests are integrated, Basic logging is implemented: TestLogger.java, and Logging is used in Tests                                                                                                                                                                                              | 9        |
+| **D1,D2**    | Detailed README                                                                                                                                                                                                                                                                                       | 8        |
+| **SKIPPED**  | F5, R3                                                                                                                                                                                                                                                                                                |          |
+| **TOTAL**    |                                                                                                                                                                                                                                                                                                       | **100+** |
+
+---
+
 ## Project Structure
 
 ```
@@ -247,7 +284,7 @@ Pipeline Stages:
 
 ## Jenkins Install and Configuration
 
-### 1️⃣ Prerequisites
+### 1 Prerequisites
 
 - **Jenkins** (v2.387+)
 - **Git** (v2.40+)
@@ -255,7 +292,7 @@ Pipeline Stages:
 - **Gradle** (v9.0.0+)
 - **Allure** (test reporting)
 
-### 2️⃣ Jenkins Job Setup
+### 2 Jenkins Job Setup
 
 #### **A. New Pipeline Job**
 
@@ -275,10 +312,10 @@ Configure → General:
 #### **C. Build Triggers**
 
 ```
-Build Triggers → ☑ GitHub hook trigger for GITScm polling
+Build Triggers → GitHub hook trigger for GITScm polling OR Poll SCM
 ```
 
-Ez azt jelenti: **Automatikus build minden GitHub push-ra!**
+
 
 #### **D. Pipeline Definition**
 
@@ -290,12 +327,7 @@ Branch: */main
 Script Path: api-testing-demo-java_starter/Jenkinsfile
 ```
 
-#### **E. Build Steps (Optional - ha manuálisan indítasz)**
-
-```
-Build → Pipeline script:
-  Select: "Pipeline script from SCM"
-```
+Then Save the configuration.
 
 ---
 
@@ -304,18 +336,19 @@ Build → Pipeline script:
 ```
 Jenkins → SauceDemo-Test-Automation → Build Now
 ```
+Make sure that you have Allure installed and configured in Jenkins global tools. And also added as PATH variable in the system.
 
 ---
 
 ## Jenkins Pipeline Overview
 
-Only contains the API calls. UI calls run into fails.
+Only contains the API calls and Allure. UI calls run into fails.
 
 ![alt text](./img.png)
 
 ## Author
 
-**Peter Osztobanyi** - Pazmany Peter Catholic University
+**Peter Osztobanyi - HKQ2Y1** - Pazmany Peter Catholic University
 [GitHub](https://github.com/osztobanyipeter1)
 
 ---
