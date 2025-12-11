@@ -27,16 +27,16 @@ public class RandomDelayHelper {
     }
 
     public static void waitForInvisibility(WebDriver driver, By locator) {
-        System.out.println("⏳ Waiting for element to disappear: " + locator);
+        System.out.println("Waiting for element to disappear: " + locator);
         WebDriverWait wait = new WebDriverWait(driver, DEFAULT_TIMEOUT);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
-        System.out.println("✅ Element disappeared!");
+        System.out.println("Element disappeared!");
     }
 
     public static void waitForTitle(WebDriver driver, String titlePart) {
-        System.out.println("⏳ Waiting for title to contain: " + titlePart);
+        System.out.println("Waiting for title to contain: " + titlePart);
         WebDriverWait wait = new WebDriverWait(driver, DEFAULT_TIMEOUT);
         wait.until(ExpectedConditions.titleContains(titlePart));
-        System.out.println("✅ Title found!");
+        System.out.println("Title found!");
     }
 }

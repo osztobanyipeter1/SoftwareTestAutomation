@@ -244,7 +244,7 @@ public class ComprehensiveUiTest {
     @DisplayName("U4_WAITS - Test explicit waits without Thread.sleep")
     void test_waits_without_thread_sleep() {
         TestLogger.logTestStart("test_waits_without_thread_sleep");
-        System.out.println("⏳ Testing waits (no Thread.sleep)");
+        System.out.println("Testing waits (no Thread.sleep)");
 
         loginPage = new LoginPage(driver);
         loginPage.navigateToLoginPage(baseUrl);
